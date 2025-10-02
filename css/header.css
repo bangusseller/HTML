@@ -29,11 +29,12 @@
    align-items: center;
 }
 
-.search-button{
+.search-button, .voice-search-button{
    height: 40px;
-   width: 60px;
+   width: 66px;
    background-color: rgb(240,240,240);
    border: 1px solid rgb(192, 192, 192);
+      margin-right: 8px;
 }
 
 .search-button img{
@@ -42,19 +43,20 @@
 }
 
 .voice-search-button{
-   height: 40px;
-   width: 40px;
+
+   width: 45px;
+   border-radius: 50%;
   
 }
 
-.voice-search-button image{
-   height: 40px;
-   width: 40px;
+.voice-search-button img{
+   height: 25px;
+   margin-top: 2px;
 }
 
 .search-bar{
    flex: 1;
-   height: 36px;
+   height: 38px;
    padding: 0px 12px;
    font-size: 16px;
    border: 1px solid rgb(192, 192, 192);
