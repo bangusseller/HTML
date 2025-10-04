@@ -12,3 +12,9 @@
        margin-top: 0;
        margin-bottom: 0;
     }
+    
+@media (min-width: 1200.1px) {
+  body {
+    margin-left: 168px;
+  }
+}

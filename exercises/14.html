@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         margin: 0;
+         padding: 0;
+      }
+
+      .sidebar1{
+         position: fixed;
+         top: 0;
+         bottom: 0;
+         background-color: rgb(46, 46, 46);
+         width: 100px;
+      }
+
+      .sidebar1 .imgs-container{
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         padding-top: 20px;
+      }
+
+      .imgs-container .img img{
+         width: 60px;
+         height: 60px;
+         object-fit: cover;
+         border-radius: 40px;
+      }
+
+      
+      .sidebar2{
+         position: fixed;
+         top: 0;
+         bottom: 0;
+         left: 100px;
+         background-color: rgb(79, 79, 79);
+         width: 150px;
+      }
+
+      .sidebar2 .infos{
+         display: flex;
+         background-color: green;
+         align-items: center;
+         justify-content: space-between;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="sidebar1">
+      <div class="imgs-container">
+         <div class="img">
+            <img src="../img/cat.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="../img/cat.jpg" alt="">
+         </div>
+         <div class="img">
+            <img src="../img/cat.jpg" alt="">
+         </div>
+      </div>
+   </div>
+   <div class="sidebar2">
+      <div class="infos">
+         <p>Infos</p>
+         <p>plus</p>
+      </div>
+      <div>
+         <p># new-videos</p>
+      </div>
+      <div>
+         <p># updates</p>
+      </div>
+      <div>
+         <p># faq</p>
+      </div>
+   </div>
+</body>
+
+</html>

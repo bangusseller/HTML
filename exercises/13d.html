@@ -7,23 +7,80 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+  
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
     .container{
         width: 400px;
+        border: 1px solid rgb(184, 184, 184);
+        padding: 5px 10px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.04);
     }
 
-        .container .inboxes{
+    .container .inboxes{
 
     }
 
-            .container .email{
+    .container .email{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
 
+    }
+
+    .email .profile-pic{
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    .profile-pic img{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .email .email-details{
+        flex: 1;
+        line-height: 22px;
+    }
+
+    .email-details .email-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    .email-header .time{
+        color: #a1a1a1;
+    }
+
+    .email-details .email-content{
+        max-width: 320px; /* or whatever you want */
+
+    }
+
+    .email-content .subject{
+
+    }
+
+    .email-content .mail{
+    color: #a1a1a1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%; 
     }
 
 </style>
 
 <body>
     <div class="container">
-        <p class="inboxes">ALL INBOXES</p>
+        <div class="inboxes">ALL INBOXES</div>
 
         <div class="email">
 
@@ -33,12 +90,12 @@
 
             <div class="email-details">
                 <div class="email-header">
-                    <p class="email-name">Chewy Promotion</p>
-                    <p class="time">4:58</p>
+                    <div class="email-name">Chewy Promotion</div>
+                    <div class="time">4:58</div>
                 </div>
                 <div class="email-content">
-                    <p class="subject">Biggest sales of the year</p>
-                    <p class="mail">Biggest sales of the year</p>
+                    <div class="subject">Biggest sales of the year</div>
+                    <div class="mail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum impedit esse aliquam rerum commodi debitis aut laudantium facere perferendis, repudiandae suscipit quae omnis nulla! Deleniti voluptatem iste nulla voluptatibus! Fuga!</div>
                 </div>
             </div>
 
